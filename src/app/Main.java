@@ -6,6 +6,7 @@ public class Main {
     static int b;
     static int c;
     static int d;
+    static double k;
 
     public static void main(String[] args) {
         System.out.println("Calculator for base calculations");
@@ -16,6 +17,8 @@ public class Main {
         System.out.println(c);
         d = multiply(a, b);
         System.out.println(d);
+        k = divide(a, b);
+        System.out.println(k);
     }
 
     private static int add(int a, int b) {
@@ -24,5 +27,9 @@ public class Main {
 
     private static int multiply(int a, int b) {
         return a * b;
+    }
+
+    private static double divide(double a, double b){
+        return a / b;
     }
 }
