@@ -7,6 +7,7 @@ public class Main {
     static int c;
     static int d;
     static double k;
+    static int l;
 
     public static void main(String[] args) {
         System.out.println("My app for Users!");
@@ -19,6 +20,8 @@ public class Main {
         System.out.println(d);
         k = divide(a, b);
         System.out.println(k);
+        l = subtraction(a, b);
+        System.out.println(l);
     }
 
     private static int add(int a, int b) {
@@ -29,7 +32,11 @@ public class Main {
         return a * b;
     }
 
-    private static double divide(double a, double b){
+    private static double divide(double a, double b) {
         return a / b;
+    }
+
+    private static int subtraction(int a, int b) {
+        return a - b;
     }
 }
